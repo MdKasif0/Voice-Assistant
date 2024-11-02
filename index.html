@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous"
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 class="app-title">Voice Assistant</h1>
+    <button id="theme-toggle" class="theme_toggle">Change Theme</button>
+  </header>
+  <div class="container">
+    <div class="circle">
+      <i id="startBtn" class="fa-solid fa-microphone"></i>
+    </div>
+    <div id="output" class="output">Your speech will appear here.</div>
+    <div id="status" class="status">Status: Ready to listen</div>
+    <div id="imageContainer" class="image-container"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <!-- Other JavaScript files -->
+  <script src="weather.js"></script>
+  <script src="news.js"></script>
+  <script src="joke.js"></script>
+  <script src="groq.js"></script>
+  <script src="cat.js"></script>
+  <script src="unsplash.js"></script>
+  <script src="stable_diffusion.js"></script> <!-- Added image generation script -->
+  <script src="main.js"></script>
+</body>
+</html>

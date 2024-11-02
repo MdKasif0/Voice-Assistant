@@ -1,0 +1,193 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif,Arial, sans-serif;
+    background-color: #f2fff0;
+    color: ghostwhite;
+    transition: background-color 1s, color 1s;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4vw 3vw 4vw 4vw;
+    margin-bottom: 8vw;
+    background-color: antiquewhite;
+    transition: background-color 1s, color 1s;
+}
+
+.app-title {
+    font-size: 7vw;
+    color: black;
+    transition: background-color 1s, color 1s;
+}
+
+/* Theme Toggle Button */
+.theme_toggle {
+    background-color: floralwhite;
+    color: black;
+    border: 0.5vw solid black;
+    padding: 2vw 2vw;
+    border-radius: 2.5vw;
+    cursor: pointer;
+    font-size: 4vw;
+    transition: background-color 1s, color 1s;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.theme_toggle:hover{
+  background-color: black;
+  color: floralwhite;
+  border: 0.5vw solid floralwhite;
+}
+
+.container {
+    text-align: center;
+    padding: 8vw 5vw;
+    background-color: #fff;
+    border-radius: 5vw;
+    box-shadow: 0vw 0vw 10vw rgba(0, 0, 0, 0.1);
+    transition: background-color 1s;
+    width: 90%;
+    min-height: 70vh;
+    margin-bottom: 8vw;
+    background-color: floralwhite;
+    transition: background-color 1s, color 1s;
+}
+
+.circle{
+  height: 20vw;
+  width: 20vw;
+  border-radius: 50%;
+  top: -2vh;
+  left: 62vw;
+  position: relative;
+  border: 1vw solid black;
+  padding: 4vw;
+  transition: background-color 1s, color 1s;
+}
+
+.fa-solid{
+  color: black;
+  font-size: 10vw;
+  transition: background-color 1s, color 1s;
+}
+
+.output{
+  margin-top: 5vw;
+  padding: 4vw;
+  font-size: 4vw;
+  color: black;
+  background-color: ghostwhite;
+  border: 0.3vw solid #ddd;
+  border-radius: 3vw;
+  min-height: 5vh;
+  transition: background-color 1s, color 1s;
+}
+
+.status {
+    margin-top: 5vw;
+    padding: 4vw 0vw;
+    font-size: 4vw;
+    color: black;
+    background-color: ghostwhite;
+    border: 0.3vw solid #ddd;
+    border-radius: 3vw;
+    min-height: 5vh;
+    transition: background-color 1s, color 1s;
+}
+
+.image-container {
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 1s, color 1s;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 3vw;
+    margin-top: 3vw;
+}
+
+#downloadButton {
+    padding: 2vw;
+    font-size: 4vw;
+    background-color: floralwhite;
+    color: black;
+    border-radius: 3vw;
+    margin-top: 5vw;
+    transition: background-color 1s, color 1s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #101010;
+    color: ghostwhite;
+}
+
+.dark-mode header{
+  background-color: black;
+}
+
+.dark-mode .app-title{
+  color: darkorange;
+}
+
+.dark-mode .theme_toggle{
+  background-color: black;
+  color: darkorange;
+  border: 0.5vw solid darkorange;
+}
+
+.dark-mode .theme_toggle:hover {
+    background-color: darkorange;
+    color: black;
+}
+
+.dark-mode .container{
+  background-color: #1D1D1D;
+}
+
+.dark-mode .circle{
+  border: 1vw solid darkorange;
+}
+
+.dark-mode .fa-solid{
+  color: darkorange;
+}
+
+.dark-mode .output{
+  color: ghostwhite;
+  background-color: #1D1D1D;
+}
+
+.dark-mode .status{
+    color: ghostwhite;
+    background-color: #1D1D1D;
+}
+
+.dark-mode #downloadButton{
+  background-color: black;
+  color: darkorange;
+  border: 0.5vw solid darkorange;
+}
+
+.dark-mode #downloadButton:hover{
+  background-color: darkorange;
+  color: black;
+}
